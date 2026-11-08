@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amy Diana | Takaful Consultant</title>
+<meta name="description" content="Amy Diana, Takaful Consultant dengan 16 tahun pengalaman dan lebih 600 pelanggan. Terokai pilihan perlindungan takaful anda.">
+
+<style>
+:root {
+  --navy:#10243a;
+  --navy2:#1b3855;
+  --gold:#c9a96e;
+  --cream:#faf8f3;
+  --text:#263747;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  font-family:Arial,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.7;
+}
+a {text-decoration:none}
+.container {width:88%;max-width:1150px;margin:auto}
+header {
+  background:var(--navy);
+  padding:17px 0;
+  position:sticky;top:0;z-index:10;
+}
+.nav {
+  display:flex;justify-content:space-between;
+  align-items:center;gap:20px;
+}
+.logo {font-size:22px;font-weight:bold;color:white}
+.logo span {color:var(--gold)}
+nav {display:flex;gap:23px;flex-wrap:wrap}
+nav a {color:white;font-size:13px}
+.hero {
+  background:linear-gradient(120deg,var(--navy),var(--navy2));
+  color:white;padding:90px 0;
+}
+.hero-grid {
+  display:grid;grid-template-columns:1.3fr .7fr;
+  align-items:center;gap:50px;
+}
+.eyebrow {
+  color:var(--gold);font-size:12px;
+  font-weight:bold;letter-spacing:3px;
+}
+h1 {font-size:clamp(38px,6vw,65px);line-height:1.13;margin:20px 0}
+.hero p {color:#e0e7ed;max-width:560px}
+.hero-photo {
+  min-height:390px;background:#263f57;
+  border:2px solid var(--gold);border-radius:150px 150px 20px 20px;
+  display:flex;align-items:center;justify-content:center;
+  color:#e9d8b8;text-align:center;padding:25px;
+}
+.btn {
+  display:inline-block;background:var(--gold);
+  color:var(--navy);padding:13px 23px;
+  border-radius:5px;font-weight:bold;font-size:13px;
+  margin:20px 8px 0 0;border:0;cursor:pointer;
+}
+.btn-outline {background:transparent;color:white;border:1px solid var(--gold)}
+.stats {display:flex;gap:45px;margin-top:40px}
+.stats strong {display:block;font-size:27px;color:var(--gold)}
+.stats span {font-size:12px;color:#d6dce3}
+section {padding:80px 0}
+.section-head {text-align:center;margin-bottom:42px}
+.section-head h2 {font-size:34px;color:var(--navy);margin:8px 0}
+.section-head p {color:#687786}
+.about {text-align:center;max-width:780px;margin:auto}
+.about h2 {color:var(--navy);font-size:32px;margin:10px}
+.about p {color:#65717c}
+.plans {
+ display:grid;grid-template-columns:repeat(2,1fr);gap:22px
+}
+.card {
+ background:white;padding:30px;border-radius:12px;
+ border:1px solid #e9e2d5;box-shadow:0 5px 20px #10243a08;
+}
+.card-number {color:#a18450;font-size:12px;font-weight:bold}
+.card h3 {color:var(--navy);font-size:23px;margin:9px 0}
+.card p {color:#65717c;font-size:14px}
+.card ul {padding-left:20px;margin-top:14px;color:#526272;font-size:13px}
+.card a {display:inline-block;color:#99743d;font-weight:bold;margin-top:20px;font-size:13px}
+.quote {background:#eeebe3}
+.form-box {
+ max-width:680px;margin:auto;background:white;
+ padding:35px;border-radius:15px;
+ box-shadow:0 8px 30px #10243a0c;
+}
+.tabs {display:flex;gap:10px;margin:25px 0}
+.tabs button {
+ flex:1;padding:13px;background:white;
+ border:1px solid var(--gold);border-radius:6px;
+ cursor:pointer;color:var(--navy);font-weight:bold;
+}
+.tabs button.active {background:var(--navy);color:white}
+label {display:block;font-weight:bold;font-size:13px;margin:16px 0 6px}
+input,select {
+ width:100%;padding:13px;border:1px solid #d9dce0;
+ border-radius:6px;font-size:15px;background:white;
+}
+input[type=checkbox] {width:auto}
+.consent {font-weight:normal;display:flex;gap:9px;align-items:flex-start}
+.consent input {margin-top:5px}
+.hidden {display:none}
+.submit {width:100%;font-size:15px}
+.contact {background:var(--navy);color:white;text-align:center}
+.contact h2 {font-size:32px;margin:12px}
+.socials {display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:30px}
+.socials a {color:var(--gold)}
+footer {background:#0a1928;color:#bfc7d0;text-align:center;padding:25px;font-size:12px}
+@media(max-width:700px) {
+ .nav {flex-direction:column}
+ nav {justify-content:center;gap:15px}
+ .hero {padding:65px 0}
+ .hero-grid {grid-template-columns:1fr}
+ .hero-photo {min-height:250px}
+ .plans {grid-template-columns:1fr}
+ .stats {gap:25px}
+ section {padding:60px 0}
+ .form-box {padding:22px}
+}
+</style>
+</head>
+
+<body>
+<header>
+ <div class="container nav">
+  <div class="logo">AMY <span>DIANA</span></div>
+  <nav>
+   <a href="#about">Mengenai Saya</a>
+   <a href="#plans">Pelan Takaful</a>
+   <a href="#quote">Get a Quote</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<div class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">TAKAFUL CONSULTANT</div>
+   <h1>Perlindungan Hari Ini,<br>Ketenteraman Masa Depan.</h1>
+   <p>Bersama Amy Diana, terokai penyelesaian perlindungan takaful untuk diri sendiri dan keluarga dengan bimbingan seorang perunding berpengalaman.</p>
+   <a class="btn" href="#quote">DAPATKAN QUOTATION</a>
+   <a class="btn btn-outline" href="https://wa.me/60163713510">WHATSAPP SAYA</a>
+   <div class="stats">
+    <div><strong>16 Tahun</strong><span>Pengalaman Industri</span></div>
+    <div><strong>600+</strong><span>Client Dibantu</span></div>
+   </div>
+  </div>
+  <div class="hero-photo">
+   <div>
+    <div style="font-size:55px">✦</div>
+    <strong>GAMBAR AMY DIANA</strong>
+    <p style="font-size:12px">Gantikan ruang ini dengan gambar portrait Amy.</p>
+   </div>
+  </div>
+ </div>
+</div>
+
+<section id="about">
+ <div class="container about">
+  <div class="eyebrow">KENALI PERUNDING ANDA</div>
+  <h2>Salam, Saya Amy Diana.</h2>
+  <p>Saya merupakan seorang Takaful Consultant dengan pengalaman selama 16 tahun dalam industri takaful dan telah membantu lebih 600 orang pelanggan. Saya komited membantu individu serta keluarga memahami keperluan perlindungan dan meneroka pelan yang bersesuaian dengan keperluan mereka.</p>
+ </div>
+</section>
+
+<section id="plans">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">PILIHAN PERLINDUNGAN</div>
+   <h2>Kenali Pelan Takaful</h2>
+   <p>Perlindungan untuk pelbagai keperluan dan peringkat kehidupan.</p>
+  </div>
+  <div class="plans">
+   <div class="card">
+    <div class="card-number">01 / PERLINDUNGAN PERUBATAN</div>
+    <h3>Medical Card</h3>
+    <p>Terokai pilihan perlindungan perubatan melalui dua pelan berikut:</p>
+    <ul>
+     <li>Anugerah Max</li>
+     <li>Asas 360</li>
+    </ul>
+    <p style="margin-top:12px">Ketahui pilihan manfaat perubatan, kelayakan dan terma setiap pelan.</p>
+    <a href="#quote">DAPATKAN QUOTATION →</a>
+   </div>
+   <div class="card">
+    <div class="card-number">02 / PERLINDUNGAN KELUARGA</div>
+    <h3>Hibah – Warisan Gold</h3>
+    <p>Terokai penyelesaian hibah takaful untuk membantu menyediakan perlindungan kewangan kepada insan tersayang.</p>
+    <ul>
+     <li>Perlindungan kewangan untuk waris</li>
+     <li>Pilihan manfaat mengikut sijil</li>
+    </ul>
+    <a href="#quote">DAPATKAN QUOTATION →</a>
+   </div>
+   <div class="card">
+    <div class="card-number">03 / PERLINDUNGAN PENYAKIT KRITIKAL</div>
+    <h3>Critical Care</h3>
+    <p>Pelan perlindungan yang boleh membantu dari sudut kewangan apabila berlaku penyakit kritikal yang dilindungi.</p>
+    <ul>
+     <li>Manfaat tertakluk kepada definisi penyakit</li>
+     <li>Terma dan syarat sijil berkenaan</li>
+    </ul>
+    <a href="#quote">DAPATKAN QUOTATION →</a>
+   </div>
+   <div class="card">
+    <div class="card-number">04 / GIO PLAN</div>
+    <h3>PRUBSN Aspirasi</h3>
+    <p>Ketahui lebih lanjut tentang pilihan pelan ini, ciri perlindungan serta syarat kelayakannya.</p>
+    <ul>
+     <li>Maklumat manfaat pelan</li>
+     <li>Syarat penyertaan dan kelayakan</li>
+    </ul>
+    <a href="#quote">DAPATKAN QUOTATION →</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="quote" id="quote">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">MARI MULAKAN</div>
+   <h2>Dapatkan Quotation Anda</h2>
+   <p>Lengkapkan maklumat di bawah. Amy akan membantu anda.</p>
+  </div>
+  <div class="form-box">
+   <div class="tabs">
+    <button type="button" id="selfTab" class="active" onclick="setType('self')">Untuk Diri Sendiri</button>
+    <button type="button" id="childTab" onclick="setType('child')">Untuk Anak</button>
+   </div>
+   <form id="quoteForm">
+    <label>Nama penuh ibu / bapa / pemohon</label>
+    <input id="name" required placeholder="Masukkan nama penuh">
+    <label>Tarikh lahir ibu / bapa / pemohon</label>
+    <input id="dob" type="date" required>
+    <label>Pekerjaan</label>
+    <input id="job" required placeholder="Contoh: Eksekutif">
+    <label>Status merokok</label>
+    <select id="smoke" required>
+     <option value="">Pilih status</option>
+     <option>Tidak merokok</option>
+     <option>Merokok</option>
+    </select>
+    <div id="childFields" class="hidden">
+     <label>Nama anak</label>
+     <input id="childName" placeholder="Nama penuh anak">
+     <label>Tarikh lahir anak</label>
+     <input id="childDob" type="date">
+    </div>
+    <label class="consent">
+     <input type="checkbox" id="consent" required>
+     <span>Saya bersetuju maklumat ini digunakan oleh Amy Diana untuk menghubungi saya berkaitan pertanyaan takaful ini.</span>
+    </label>
+    <button type="submit" class="btn submit">HANTAR MELALUI WHATSAPP</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="contact">
+ <div class="container">
+  <div class="eyebrow">HUBUNGI SAYA</div>
+  <h2>Perlukan Bantuan?</h2>
+  <p>Hubungi Amy Diana untuk pertanyaan dan konsultasi takaful.</p>
+  <a class="btn" href="https://wa.me/60163713510">WHATSAPP AMY</a>
+  <a class="btn btn-outline" href="tel:+60163713510">CALL AMY</a>
+  <div class="socials">
+   <a href="#" target="_blank">TikTok</a>
+   <a href="#" target="_blank">Facebook</a>
+   <a href="#" target="_blank">Instagram</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ © 2026 Amy Diana | Takaful Consultant.<br>
+Manfaat, kelayakan, pengecualian dan terma perlindungan adalah tertakluk kepada dokumen rasmi produk serta sijil takaful.
+</footer>
+
+<script>
+let currentType = 'self';
+
+function setType(type) {
+ currentType = type;
+ document.getElementById('selfTab').classList.toggle('active',type==='self');
+ document.getElementById('childTab').classList.toggle('active',type==='child');
+ document.getElementById('childFields').classList.toggle('hidden',type!=='child');
+ document.getElementById('childName').required = type==='child';
+ document.getElementById('childDob').required = type==='child';
+}
+
+document.getElementById('quoteForm').addEventListener('submit',function(e) {
+ e.preventDefault();
+
+ const name=document.getElementById('name').value.trim();
+ const dob=document.getElementById('dob').value;
+ const job=document.getElementById('job').value.trim();
+ const smoke=document.getElementById('smoke').value;
+
+ let message=`Assalamualaikum Amy Diana. Saya berminat untuk mendapatkan quotation takaful.
+
+Kategori: ${currentType==='self'?'Diri sendiri':'Untuk anak'}
+Nama ibu/bapa/pemohon: ${name}
+Tarikh lahir: ${dob}
+Pekerjaan: ${job}
+Status merokok: ${smoke}`;
+
+ if(currentType==='child') {
+  message+=`
+Nama anak: ${document.getElementById('childName').value.trim()}
+Tarikh lahir anak: ${document.getElementById('childDob').value}`;
+ }
+
+ window.open('https://wa.me/60163713510?text='+encodeURIComponent(message),'_blank');
+});
+</script>
+</body>
+</html>
